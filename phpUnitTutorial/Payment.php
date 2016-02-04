@@ -6,9 +6,8 @@ class Payment
     const API_ID = 123456;
     const TRANS_KEY = 'TRANSACTION KEY';
 
-    public function processPayment(array $paymentDetails)
+    public function processPayment(\AuthorizeNetAIM $transaction, array $paymentDetails)
     {
-        $transaction = new \AuthorizeNetAIM(self::API_ID, self::TRANS_KEY);
         $transaction->amount = $paymentDetails['amount'];
         $transaction->card_num = $paymentDetails['card_num'];
         $transaction->exp_date = $paymentDetails['exp_date'];
