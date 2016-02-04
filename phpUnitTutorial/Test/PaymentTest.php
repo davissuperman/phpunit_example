@@ -26,7 +26,7 @@ class PaymentTest extends \PHPUnit_Framework_TestCase{
             ->method('authorizeAndCapture')
             ->will($this->returnValue($response));
 
-        
+
         $result = $payment->processPayment($authorizeNet, $paymentDetails);
         $this->assertTrue($result);
     }
