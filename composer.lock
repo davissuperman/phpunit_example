@@ -4,9 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "78fe69c47e04a930c80c013dd12b4c77",
-    "content-hash": "a95edf90bf447eea9263ca4398d87336",
-    "packages": [],
+    "hash": "66d2466b701b0e36131e652451c9a56b",
+    "content-hash": "baddac4ade608d4a77c13633fdb41f8e",
+    "packages": [
+        {
+            "name": "ajbdev/authorizenet-php-api",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ajbdev/authorizenet-php-api.git",
+                "reference": "88465a99aa96cc2e991a1f544c4c42042ace8c8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ajbdev/authorizenet-php-api/zipball/88465a99aa96cc2e991a1f544c4c42042ace8c8e",
+                "reference": "88465a99aa96cc2e991a1f544c4c42042ace8c8e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/",
+                    "AuthorizeNet.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Authorize.NET PHP library with composer support",
+            "keywords": [
+                "authorize.net",
+                "ecommerce",
+                "payment"
+            ],
+            "abandoned": "authorizenet/authorizenet",
+            "time": "2015-09-03 19:58:03"
+        }
+    ],
     "packages-dev": [
         {
             "name": "phpunit/php-code-coverage",
@@ -413,7 +448,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ajbdev/authorizenet-php-api": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

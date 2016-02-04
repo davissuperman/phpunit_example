@@ -416,5 +416,41 @@
             "testing",
             "xunit"
         ]
+    },
+    {
+        "name": "ajbdev/authorizenet-php-api",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ajbdev/authorizenet-php-api.git",
+            "reference": "88465a99aa96cc2e991a1f544c4c42042ace8c8e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ajbdev/authorizenet-php-api/zipball/88465a99aa96cc2e991a1f544c4c42042ace8c8e",
+            "reference": "88465a99aa96cc2e991a1f544c4c42042ace8c8e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.0"
+        },
+        "time": "2015-09-03 19:58:03",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "lib/",
+                "AuthorizeNet.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "description": "Authorize.NET PHP library with composer support",
+        "keywords": [
+            "authorize.net",
+            "ecommerce",
+            "payment"
+        ],
+        "abandoned": "authorizenet/authorizenet"
     }
 ]
